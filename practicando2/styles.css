@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+div p {
+    color: aliceblue;
+    margin: 20px 0 20px 0;
+}
+
+span {
+    font-family: 'Shantell Sans', cursive;
+    font-weight: bold;
+}
+
+.Franco {
+    color: red;
+}
+
+.veinte {
+    color: green;
+}
+
+.html {
+    color: rgb(221, 75, 37);
+}
+
+.css {
+    color: rgb(34, 119, 255);
+}
+
+.js {
+    color: rgb(232, 184, 36);
+}
+
+.py {
+    color: rgb(55, 110, 157);
+}
+
+.conocimientos {
+    color: rgb(94, 211, 243);
+}
+
+.tecnologia {
+    color: cadetblue;
+}
+
+.software {
+    color: red;
+}
+
+.tiempo {
+    color: rgb(101, 28, 28);
+}
+.lenguajes{
+    color: violet;
+}
+.programacion{
+    color: rgb(1, 95, 95);
+}
+.web{
+    color: rgb(0, 191, 0);
+}
+.habilidades{
+    color: rgb(146, 201, 62);
+}
+.desarrollo{
+    color: rgb(65, 0, 255);
+}
+
+.contenedor{
+    border-radius: 10px;
+    border: 2px solid #a73ef9;
+    padding: 50px;
+    max-width: 900px;
+}
+
+html{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
