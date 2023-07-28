@@ -1,0 +1,84 @@
+body{
+    background-color: #404040;
+    position: relative;
+    font-family: Arial;
+    font-size: 64px;
+}
+.H:hover{
+    color: #FF0000;
+}
+.O:hover{
+    color: #00FF19;
+}
+.L:hover{
+    color: #0500FF;
+}
+.A:hover{
+    color: #EB00FF;
+}
+.A-2:hover{
+    color: #FFA800;
+}
+.A-3:hover{
+    color: #00FFF0;
+}
+.hola-1{
+    position: absolute;
+    left: 408px;
+    top: 62px;
+}
+.hola-2{
+    position: absolute;
+    left: 1118px;
+    top:47px;
+}
+.hola-3{
+    position: absolute;
+    left: 111px;
+    top: 352px;
+}
+.hola-4{
+    position: absolute;
+    left: 668px;
+    top: 389px;
+}
+.hola-5{
+    position: absolute;
+    left: 960px;
+    top: 240px;
+}
+.hola-6{
+    position: absolute;
+    top: 293px;
+    left: 1447px;
+}
+.hola-7{
+    position: absolute;
+    left: 516px;
+    top: 716px;
+}
+.hola-8{
+    position: absolute;
+    top: 448px;
+    left: 1100px;
+}
+.hola-9{
+    position: absolute;
+    top: 731px;
+    left: 1264px;
+}
+.hola-10{
+    position: absolute;
+    left: 96px;
+    top: 790px;
+}
+.hola-11{
+    position: absolute;
+    left: 928px;
+    top: 886px;
+}
+.hola-12{
+    position: absolute;
+    left: 1549px;
+    top: 886px;
+}

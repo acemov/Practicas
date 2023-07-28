@@ -21,7 +21,7 @@ ul{
 }
 .logo{
     display: flex;
-    font-size: 24px;
+    font-size: 27px;
     align-items: center;
     color: white;
 }
@@ -30,7 +30,7 @@ ul{
 }
 .content{
     margin-left: 300px;
-    font-size: 16px;
+    font-size: 24px;
     color: white;
     display: flex;
     align-items: center;

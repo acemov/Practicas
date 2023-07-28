@@ -1,71 +1,87 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     background-color: #626262;
+    
     color: aliceblue;
     font-family: Helvetica;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0; /* Agregamos un reseteo de márgenes */
 }
+
 .contenedor{
     background-color: #242424;
-    margin: 0 82px;
+    margin: 0 10px; /* Reducimos los márgenes para mejorar en pantallas pequeñas */
     border-radius: 10px;
     border: #CC00FF 2px dashed;
     padding: 5px 10px;
-
 }
+
 div p {
     margin: 0;
 }
+
 .hijo{
     font-size: 12px;
-
 }
+
 .hijo-1{
-    display: none;
     font-weight: 600;
 }
+
 .hijo-2{
     font-weight: 1000;
-    margin: 36.5px 20px;
     text-align: center;
 }
+
 .hijo-3{
-    display: none;
     font-weight: 600;
     text-align: right;
 }
-@media (min-width:481px){
+
+/* Media query para celulares (0-480px) */
+@media (max-width: 480px){
     .hijo-1{
         display: block;
     }
     .hijo-2{
-        margin: 0;
-        margin-top: 47px;
+        display: none; /* Ocultar hijo-2 en celulares */
     }
-    .contenedor{
-        padding: 50px 90px;
-        border-radius: 75px;
-        margin-right: 156px ;
-        margin-left: 157px;
-    }
-}
-@media (min-width:769px){
     .hijo-3{
         display: block;
     }
+    .contenedor{
+        padding: 20px; /* Ajustar el padding para celulares */
+    }
+}
+
+/* Media query para tablets (481-768px) */
+@media (min-width: 481px) and (max-width: 768px){
+    .hijo-1{
+        display: none; /* Ocultar hijo-1 en tablets */
+    }
     .hijo-2{
-        margin: 0 50px 0 50px;
+        display: block;
+    }
+    .hijo-3{
+        display: none; /* Ocultar hijo-3 en tablets */
     }
     .contenedor{
-        
-        padding: 90px 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 50px; /* Ajustar el padding para tablets */
     }
+}
+
+/* Media query para laptops (769-1279px) */
+@media (min-width: 769px) and (max-width: 1279px){
+    /* Agrega los estilos específicos para laptops aquí si es necesario */
+}
+
+/* Media query para monitores (1280px en adelante) */
+@media (min-width: 1280px){
+    /* Agrega los estilos específicos para monitores aquí si es necesario */
 }
