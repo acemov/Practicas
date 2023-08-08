@@ -1,18 +1,44 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
     background-color: rgb(250, 222, 179);
 }
 
-.caja{
+.padre {
+    display: grid;
+    grid-template-columns: 200px 200px; /* define las columnas */
+    grid-template-rows: 100px 40px; /* filas */
+    gap: 10px 20px;  /* sepracion */
+
+
+    /* para hacer mas corto y sencillo usamos repeat */
+    grid-template-columns: repeat(4, 50px) 10px; /*cuatros filas de 50px y la quinta de 10px */
+    /* otra forma de usar */
+    grid-template-columns: repeat(2, 100px 200px);  /* dos por la cantidad de medidas que hay
+    si son 2, con dos medidas (100px 200px) entoces habra 4 columnas, con medidas intercaladas,
+    100px 200px 100px 200px
+
+    otro ejemplo:  repeat(5, 100px 200px 500px); habra 10 columnas, siendo la primera de 100px la segunda de 
+    200px y la tercera 500px, hasta que llegue a 10 columnas
+    */
+
+
+    /* unidad de grid  FR*/
+    grid-template-columns: 0.5fr 1fr 1fr;
+
+    
+}
+
+
+.caja {
     background-color: aqua;
-    width: 200px;
-    height: 200px;
-    margin: auto;
     color: black;
     font-size: 20px;
     font-weight: 900;
-    display: inline-block;
     border: 3px solid black;
 }
