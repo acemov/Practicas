@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const {cursosImportados} = require('./cursos.js')
+const cursosImportados = require('./cursos.js')
 
 app.get('/', function (req, res) {
     res.send("mi primer servidor")
