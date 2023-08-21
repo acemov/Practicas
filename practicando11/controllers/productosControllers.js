@@ -3,4 +3,5 @@ let productos ={
         return res.render("producto")
     }
 }
+
 module.exports= productos

@@ -11,6 +11,13 @@
 <body>
     <h2>Cielo</h2>
     <img src="/img/cielo.jpg" width="200px">
+    <% for (let i=0; i < 8; i++) {%>
+        <% if(i%2==0){ %>
+            <p class="rojo">soy un par <%= i %></p>
+        <% } else {%>
+            <p class="verde">soy un impar <%= i %></p>
+        <% }%>
+    <% } %>
 </body>
 
 </html>
