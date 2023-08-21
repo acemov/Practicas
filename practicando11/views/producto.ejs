@@ -18,6 +18,12 @@
             <p class="verde">soy un impar <%= i %></p>
         <% }%>
     <% } %>
+    <h2>Lista de usuarios 👇</h2>
+    <% for (let i=0; i < users.length ; i++) {%>
+        <li>
+            <%= users[i] %>
+        </li>
+    <% } %>
 </body>
 
 </html>
