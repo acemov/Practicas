@@ -6,7 +6,8 @@ let productos ={
             'nubes',
             'fuego'
         ]
-        return res.render("producto", {'users':usuarios})
+        //                     👇    este "producto" es el de views (producto.ejs)
+        return res.render("producto.ejs", {'users':usuarios})
     }
 }
 

@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <!-- archivo parcial -->
+    <%- include('./partials/manitas.ejs') %>
+
+
+
     <h2>Cielo</h2>
     <img src="/img/cielo.jpg" width="200px">
     <% for (let i=0; i < 8; i++) {%>
@@ -18,12 +23,18 @@
             <p class="verde">soy un impar <%= i %></p>
         <% }%>
     <% } %>
+
+
+    <!-- del ProductosControllers.js el array (si agregamos mas contenido al array, se agregara a la lista de usuarios) -->
     <h2>Lista de usuarios 👇</h2>
     <% for (let i=0; i < users.length ; i++) {%>
         <li>
             <%= users[i] %>
         </li>
     <% } %>
+
+    <!-- archivo parcial -->
+    <%- include('./partials/manitas.ejs') %>
 </body>
 
 </html>
