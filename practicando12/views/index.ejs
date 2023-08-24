@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>
+    practicando
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    practicando
+  </h1>
+  <p>Welcome to practicando</p>
+  <% for(let i=0; i < nombres.length ; i++) { %>
+    <li>
+      <a href="/<%= nombres[i].id %>"> <%= nombres[i].name %> </a>
+    </li>
+    <% } %>
+  <h2>search</h2>
+  <form action="/search" method="get">
+    <input type="text" name="search">
+    <input type="submit" value="search">
+  </form>
+</body>
 </html>
