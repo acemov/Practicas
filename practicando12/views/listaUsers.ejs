@@ -15,13 +15,13 @@
     <p>Welcome to practicando</p>
     <% for(let i=0; i < listaUsers.length ; i++) { %>
         <li>
-            <a href="/<%= listaUsers[i].id %>">
-                <%= listaUsers[i].name %>
+            <a href="/<%= nombres[i].id %>">
+                <%= nombres[i].name %>
             </a>
         </li>
         <% } %>
             <h2>search</h2>
-            <form action="/search" method="get">
+            <form action="/search" method="query">
                 <input type="text" name="search">
                 <input type="submit" value="search">
             </form>
