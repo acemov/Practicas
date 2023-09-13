@@ -16,6 +16,9 @@
   <% for(let i=0; i < nombres.length ; i++) { %>
     <li>
       <a href="/<%= nombres[i].id %>"> <%= nombres[i].name %> </a>
+      <form method="post" action="/putYdelete/DELETE/listaUsers[i].name?_method=DELETE"><!-- EL ACTION VA al archivo /router/putYdelete -->
+        <button>Delete</button>
+    </form>
     </li>
     <% } %>
   <h2>search</h2>
